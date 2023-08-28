@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QListView" name="listView">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>0</y>
+      <width>751</width>
+      <height>411</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menulogo">
+    <property name="title">
+     <string>logo</string>
+    </property>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menureturn">
+    <property name="title">
+     <string>return </string>
+    </property>
+    <addaction name="actionreturn"/>
+   </widget>
+   <widget class="QMenu" name="menushow_table">
+    <property name="title">
+     <string>show table</string>
+    </property>
+    <addaction name="actiontable"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuhide_map">
+    <property name="title">
+     <string>hide map</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menushow_current_node">
+    <property name="title">
+     <string>show current node</string>
+    </property>
+   </widget>
+   <addaction name="menulogo"/>
+   <addaction name="menureturn"/>
+   <addaction name="menushow_table"/>
+   <addaction name="menu"/>
+   <addaction name="menuhide_map"/>
+   <addaction name="menushow_current_node"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionreturn">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/new/img/undo.png</normaloff>:/new/img/undo.png</iconset>
+   </property>
+   <property name="text">
+    <string>return</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="actionsetting">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/new/img/icons8-setting-32.png</normaloff>:/new/img/icons8-setting-32.png</iconset>
+   </property>
+   <property name="text">
+    <string>setting</string>
+   </property>
+  </action>
+  <action name="actiontable">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/new/img/table.png</normaloff>:/new/img/table.png</iconset>
+   </property>
+   <property name="text">
+    <string>table</string>
+   </property>
+  </action>
+  <action name="actionhide">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/new/img/icons8-hide-24.png</normaloff>:/new/img/icons8-hide-24.png</iconset>
+   </property>
+   <property name="text">
+    <string>hide</string>
+   </property>
+  </action>
+  <action name="actionmore">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/new/img/icons8-left-50.png</normaloff>:/new/img/icons8-left-50.png</iconset>
+   </property>
+   <property name="text">
+    <string>more</string>
+   </property>
+  </action>
+  <action name="actionmap">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/new/img/address.png</normaloff>:/new/img/address.png</iconset>
+   </property>
+   <property name="text">
+    <string>map</string>
+   </property>
+  </action>
+  <action name="actionmail">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/new/img/mail.png</normaloff>:/new/img/mail.png</iconset>
+   </property>
+   <property name="text">
+    <string>mail</string>
+   </property>
+  </action>
+  <action name="actiontraker">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/new/img/radar.png</normaloff>:/new/img/radar.png</iconset>
+   </property>
+   <property name="text">
+    <string>traker</string>
+   </property>
+  </action>
+  <action name="actionearth">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/new/img/globe-earth.png</normaloff>:/new/img/globe-earth.png</iconset>
+   </property>
+   <property name="text">
+    <string>earth</string>
+   </property>
+  </action>
+  <action name="actiondocument">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/new/img/google-docs.png</normaloff>:/new/img/google-docs.png</iconset>
+   </property>
+   <property name="text">
+    <string>document</string>
+   </property>
+  </action>
+  <action name="actionantenna">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/new/img/wifi.png</normaloff>:/new/img/wifi.png</iconset>
+   </property>
+   <property name="text">
+    <string>antenna</string>
+   </property>
+  </action>
+  <action name="actionactivation">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/new/img/analytics.png</normaloff>:/new/img/analytics.png</iconset>
+   </property>
+   <property name="text">
+    <string>activation</string>
+   </property>
+  </action>
+  <action name="actionradar">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/new/img/icons8-radio-waves-30.png</normaloff>:/new/img/icons8-radio-waves-30.png</iconset>
+   </property>
+   <property name="text">
+    <string>radar</string>
+   </property>
+  </action>
+  <action name="actioniust">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/new/img/Downloads/iust.png</normaloff>:/new/img/Downloads/iust.png</iconset>
+   </property>
+   <property name="text">
+    <string>iust</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/new/img">
+        <file>undo.png</file>
+        <file>wifi.png</file>
+        <file>table.png</file>
+        <file>radar.png</file>
+        <file>mail.png</file>
+        <file>icons8-setting-32.png</file>
+        <file>icons8-radio-waves-30.png</file>
+        <file>icons8-left-50.png</file>
+        <file>icons8-hide-24.png</file>
+        <file>google-docs.png</file>
+        <file>globe-earth.png</file>
+        <file>analytics.png</file>
+        <file>address.png</file>
+        <file>../Downloads/iust.png</file>
+    </qresource>
+    <qresource prefix="/"/>
+</RCC>
