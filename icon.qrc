@@ -13,7 +13,6 @@
         <file>globe-earth.png</file>
         <file>analytics.png</file>
         <file>address.png</file>
-        <file>../Downloads/iust.png</file>
     </qresource>
     <qresource prefix="/"/>
 </RCC>

@@ -14,16 +14,11 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QListView" name="listView">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>0</y>
-      <width>751</width>
-      <height>411</height>
-     </rect>
-    </property>
-   </widget>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="map_gridLayout"/>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -197,7 +192,7 @@
   </action>
   <action name="actioniust">
    <property name="icon">
-    <iconset resource="icon.qrc">
+    <iconset>
      <normaloff>:/new/img/Downloads/iust.png</normaloff>:/new/img/Downloads/iust.png</iconset>
    </property>
    <property name="text">

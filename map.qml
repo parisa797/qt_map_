@@ -1,21 +1,18 @@
-import QtQuick 2.0
-import QtPositioning 5.15
-import QtLocation 6.5
+import QtQuick
+import QtPositioning
+import QtLocation
 
-Window {
+Item {
 
     Plugin {
-
-            id: onlineGmMapPlugin
-
-            name: "googlemaps"
-
-        }
+        id: onlineGmMapPlugin
+        name: "googlemaps"
+    }
 
     Map {
         id: map
         anchors.fill: parent
-        plugin: mapPlugin
+        plugin: onlineGmMapPlugin
         center: QtPositioning.coordinate(59.91, 10.75) // Oslo
         zoomLevel: 14
         property geoCoordinate startCentroid
@@ -24,16 +21,16 @@ Window {
             id: pinch
             target: null
             onActiveChanged: if (active) {
-                map.startCentroid = map.toCoordinate(pinch.centroid.position, false)
-            }
+                                 map.startCentroid = map.toCoordinate(pinch.centroid.position, false)
+                             }
             onScaleChanged: (delta) => {
-                map.zoomLevel += Math.log2(delta)
-                map.alignCoordinateToPoint(map.startCentroid, pinch.centroid.position)
-            }
+                                map.zoomLevel += Math.log2(delta)
+                                map.alignCoordinateToPoint(map.startCentroid, pinch.centroid.position)
+                            }
             onRotationChanged: (delta) => {
-                map.bearing -= delta
-                map.alignCoordinateToPoint(map.startCentroid, pinch.centroid.position)
-            }
+                                   map.bearing -= delta
+                                   map.alignCoordinateToPoint(map.startCentroid, pinch.centroid.position)
+                               }
             grabPermissions: PointerHandler.TakeOverForbidden
         }
         WheelHandler {

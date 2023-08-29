@@ -1,7 +1,4 @@
-QT       += core gui
-
-QT       += location
-QT       += quick
+QT       += core gui location quick
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
